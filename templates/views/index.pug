@@ -2,13 +2,12 @@ extends ../layouts/default
 
 block content
 	.container: .jumbotron
-		img(src='/images/lo	go.svg', width='160')
+		img(src='/images/original.png', width='160',align='right')
 		h1 Welcome to my world 
-		p This is Rosemary <a href='http://keystonejs.com' target='_blank'>@Vancouver</a> website.
-		p You can find what you want to buy from this website
+		p This is Rosemary <a href='http://keystonejs.com' target='_blank'>@Vancouver</a> website.You can find what you want to buy from this website
 			| <a href='http://getbootstrap.com/' target='_blank'>Clothes</a>
 			| and <a href='http://www.jquery.com/' target='_blank'>Food</a>.
-		p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
+		//p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to do the shopping.
 		hr
 		if user && user.canAccessKeystone
 			p
@@ -21,7 +20,7 @@ block content
 		hr
 		
 		
-		<img src="images/pegwin.jpg" alt="Mountain View" style="width:200px;height:150px;">
+		img(src='images/pegwin.jpg' alt='Mountain View' width='180', height='150')
 		hr
 		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
 			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
